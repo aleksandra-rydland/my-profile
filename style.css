@@ -1,0 +1,306 @@
+body {
+    background-color: #E5E8F0;
+    color: rgb(30, 30, 30, 1.0);
+    font-family: 'Lora', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #808080;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transition: background-size 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #DDC4DD;
+    background-size: 0% 1px;
+}
+
+@media (max-width: 768px) {
+    .profile-picture img {
+        width: 150px; 
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture img {
+        width: 100px; 
+        height: 100px;
+    }
+}
+
+
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    color: #000;
+    font-weight: 200;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.travel-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.family-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.friends-section p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+.profile-content p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
+.star {
+    color: #A8F9FF;
+}
+
+.profile-picture img {
+    width: 183px;
+    height: 185px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px #C2CEDF;
+    border-radius: 15px;
+    max-width: 950px;
+}
+
+.discover-button {
+    display: inline-block;
+    background-color: #4E5166;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.discover-button:hover {
+    background-color: #DDC4DD;
+}
+
+.discover-button a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+:root {
+    --icon-color: #96C9DC;
+    --icon-hover-color: #DDC4DD;
+    --main-font: 'Nunito Sans', sans-serif;
+}
+
+
+body {
+    font-family: var(--main-font) !important;
+}
+
+
+.follow-me {
+    text-align: center;
+    padding: 20px 0; 
+}
+
+.follow-me .social-icons ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.follow-me .social-icons li {
+    margin: 0 25px;
+}
+
+.follow-me .social-icons a {
+    text-decoration: none;
+    background-image: none;
+    font-size: 50px; 
+    color: var(--icon-color); 
+    transition: color 0.3s ease;
+}
+
+.follow-me .social-icons a:hover,
+.follow-me .social-icons a:focus { 
+    color: var(--icon-hover-color); 
+    transform: scale(1.1); 
+}
+
+
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropbtn {
+    background-color: #808080;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f7f6f4; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #DDC4DD;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.profile-content p {
+    font-weight: normal; 
+}
+.image-links img {
+    transition: transform 0.3s ease; 
+}
+
+.image-links img:hover {
+    transform: scale(1.6);
+    z-index: 1; 
+}
+
+.image-links a img {
+    border: none;
+    vertical-align: middle; 
+}
+
+.image-links img, .divider img {
+    transition: transform 0.3s ease;
+}
+
+.image-links img:hover, .divider img:hover {
+    transform: scale(1.6);
+    z-index: 1;
+}
+
+.image-links a img, .divider a img {
+    border: none;
+    vertical-align: middle;
+}
+
+
+
+.footer-marquee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.marquee {
+    white-space: nowrap;
+    animation: marquee 10s linear infinite; 
+    font-size: 30px; 
+    color: #DDC4DD; 
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s; 
+    vertical-align: top; 
+}
+
+.image-wrapper:hover {
+    transform: scale(1.1); 
+    z-index: 10; 
+}
+
+.image-wrapper span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-wrapper:hover span {
+    opacity: 1;
+}
+
+.modal {
+    display: none;
+}
+
